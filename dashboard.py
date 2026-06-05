@@ -122,7 +122,7 @@ def render_dashboard(metrics: Dict[str, Any], results: List[Dict[str, Any]], num
     table.add_column("Title", style="italic")
 
     # Select top 20 rows
-    top_results = results
+    top_results = results[:20]
     
     for r in top_results:
         status = r["status"]
